@@ -1,0 +1,24 @@
+<div class="container form-custom" ng-controller="LoginController">
+    <div class="row login">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+            <form class="custom">
+                <div class="user_input">
+                    <label id="username_icon"></label>
+                    <input type="text" class="form-input" placeholder="请输入账户名" ng-model="user.name">
+                </div>
+                <div class="user_input">
+                    <label id="userpas_icon"></label>
+                    <input type="password" class="form-input" placeholder="请输入密码" ng-model="user.pasw">
+                </div>
+                <button type="submit" class="btn signin" ng-click="verific()">登 录</button>
+            </form>
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6" ng-bind="validateTip"></div>
+        <div class="col-xs-3"></div>
+    </div>
+</div>
